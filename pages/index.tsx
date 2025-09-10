@@ -37,7 +37,7 @@ export default function CallForScience() {
       return new Date(item.deadline);
     })();
 
-    if (isNaN(fechaLimite) || fechaLimite < hoy) return false;
+    if (isNaN(fechaLimite.getTime()) || fechaLimite < hoy) return false;
 
     const {
       revista = "",
