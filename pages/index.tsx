@@ -172,6 +172,7 @@ export default function CallForScience() {
                 <p className="text-sm">🎯 {item.tematica}</p>
                 <p className="text-sm text-zinc-400">📘 {item.tematicaEN}</p>
                 <p className="text-sm">📅 Deadline: {item.deadline}</p>
+                <p className="text-sm">📊 Cuartil: {item.cuartil}</p>
                 <p className="text-sm">💰 Pago: ${item.pago}</p>
                 <Button
                   variant="outline"
