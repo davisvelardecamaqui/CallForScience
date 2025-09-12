@@ -1,8 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-
 const RAW = "https://raw.githubusercontent.com/davisvelardecamaqui/CallForScience/main/CallForScienceAPP.csv";
-
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(_: NextApiRequest, res: NextApiResponse) {
   try {
     const r = await fetch(RAW, { cache: "no-store" });
     if (!r.ok) throw new Error("CSV fetch failed");
