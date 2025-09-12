@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Papa from "papaparse";
 
-const CSV_URL = "https://raw.githubusercontent.com/davisvelardecamaqui/CallForScience/main/CallForScienceAPP.csv";
+const CSV_URL = "/api/csv";
 
 const translations = {
   es: {
@@ -157,7 +157,8 @@ export default function CallForScience() {
 
   return (
     <>
-           <main className="min-h-screen bg-black text-white font-sans">
+      
+      <main className="min-h-screen bg-black text-white font-sans">
         {/* LANG SWITCH */}
         <div className="flex justify-end px-6 pt-6">
           <button
